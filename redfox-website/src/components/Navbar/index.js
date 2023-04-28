@@ -6,6 +6,8 @@ import {
   Nav,
   NavbarContainer,
   NavLogo,
+  Img,
+  ImgWrap,
   MobileIcon,
   NavMenu,
   NavItem,
@@ -13,6 +15,7 @@ import {
   NavBtn,
   NavBtnLink,
 } from "./NavbarElements";
+import img from "../../images/logo.png";
 
 const Navbar = ({ toggle }) => {
   const [scrollNav, setScrollNav] = useState(false);
@@ -39,7 +42,7 @@ const Navbar = ({ toggle }) => {
         <Nav scrollNav={scrollNav}>
           <NavbarContainer>
             <NavLogo to="/" onClick={toggleHome}>
-              More Ventures
+              <Img src={img} alt="redfox logo" />
             </NavLogo>
             <MobileIcon onClick={toggle}>
               <FaBars />
