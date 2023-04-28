@@ -102,10 +102,10 @@ export const NavBtn = styled.nav`
 
 export const NavBtnLink = styled(LinkRouter)`
   border-radius: 50px;
-  background: ${colors.whatsapp};
+  background: ${colors.red};
   white-space: nowrap;
   padding: 10px 22px;
-  color: ${colors.black};
+  color: ${colors.white};
   font-size: 16px;
   outline: none;
   border: none;
