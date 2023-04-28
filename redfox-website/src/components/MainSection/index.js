@@ -25,21 +25,19 @@ const MainSection = () => {
         <VideoBackground autoPlay loop muted src={Video} type="video/mp4" />
       </CoolBackground>
       <CoolContent>
-        <CoolH1>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-        </CoolH1>
+        <CoolH1>Streamlined Yard Truck Solutions</CoolH1>
         <CoolP>
-          Corporis, officiis nam inventore voluptatem ducimus soluta repellat
-          mollitia dolores consequatur excepturi et facilis quos numquam nisi
-          laudantium accusantium quia quo molestias.
+          In this industry we all know that saving and reducing costs is one of
+          the TOP priorities without leaving behind security and logistic
+          efficiency.
         </CoolP>
         <CoolBtnWrapper>
           <Button
-            to="signup"
+            to="contact"
             onMouseEnter={onHover}
             onMouseLeave={onHover}
-            primary="true"
-            dark="true"
+            primary="false"
+            dark="false"
           >
             Get started {hover ? <ArrowForward /> : <ArrowRight />}
           </Button>
