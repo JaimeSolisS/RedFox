@@ -28,9 +28,6 @@ function Sidebar({ isOpen, toggle }) {
             Contact
           </SidebarLink>
         </SidebarMenu>
-        <SidebarBtnWrap>
-          <SidebarRoute to="/signin">Sign In</SidebarRoute>
-        </SidebarBtnWrap>
       </SidebarWrapper>
     </SidebarContainer>
   );

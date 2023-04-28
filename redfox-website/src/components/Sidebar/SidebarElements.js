@@ -9,7 +9,7 @@ export const SidebarContainer = styled.aside`
   z-index: 999;
   width: 100%;
   height: 100%;
-  background: #0d0d0d;
+  background: ${colors.lightPurple};
   display: grid;
   align-items: center;
   top: 0;
@@ -60,7 +60,7 @@ export const SidebarLink = styled(LinkScroll)`
   cursor: pointer;
 
   &:hover {
-    color: ${colors.whatsapp};
+    color: ${colors.red};
     transition: 0.2s ease-in-out;
   }
 `;
@@ -72,7 +72,7 @@ export const SidebarBtnWrap = styled.div`
 
 export const SidebarRoute = styled(LinkRouter)`
   border-radius: 50px;
-  background: ${colors.whatsapp};
+  background: ${colors.red};
   white-space: nowrap;
   padding: 16px 64px;
   color: ${colors.black};
