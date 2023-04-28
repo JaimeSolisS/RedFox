@@ -1,6 +1,7 @@
 import React from "react";
 import { animateScroll as scroll } from "react-scroll";
 import { FaFacebook } from "react-icons/fa";
+import img from "../../images/logo.png";
 import {
   FooterContainer,
   FooterWrap,
@@ -12,6 +13,7 @@ import {
   SocialMedia,
   SocialMediaWrap,
   SocialLogo,
+  Img,
   WebsiteRights,
   SocialIcons,
   SocialIconLink,
@@ -25,54 +27,15 @@ const Footer = () => {
   return (
     <FooterContainer>
       <FooterWrap>
-        <FooterLinksContainer>
-          <FooterLinksWrapper>
-            <FooterLinkItems>
-              <FooterLinkTitle> About us</FooterLinkTitle>
-              <FooterLink to="/signin">A</FooterLink>
-              <FooterLink to="/signin">B</FooterLink>
-              <FooterLink to="/signin">C</FooterLink>
-            </FooterLinkItems>
-            <FooterLinkItems>
-              <FooterLinkTitle> Another</FooterLinkTitle>
-              <FooterLink to="/signin">A</FooterLink>
-              <FooterLink to="/signin">B</FooterLink>
-              <FooterLink to="/signin">C</FooterLink>
-            </FooterLinkItems>
-          </FooterLinksWrapper>
-          <FooterLinksWrapper>
-            <FooterLinkItems>
-              <FooterLinkTitle> About You</FooterLinkTitle>
-              <FooterLink to="/signin">A</FooterLink>
-              <FooterLink to="/signin">B</FooterLink>
-              <FooterLink to="/signin">C</FooterLink>
-            </FooterLinkItems>
-            <FooterLinkItems>
-              <FooterLinkTitle> Another</FooterLinkTitle>
-              <FooterLink to="/signin">A</FooterLink>
-              <FooterLink to="/signin">B</FooterLink>
-              <FooterLink to="/signin">C</FooterLink>
-            </FooterLinkItems>
-          </FooterLinksWrapper>
-        </FooterLinksContainer>
         <SocialMedia>
           <SocialMediaWrap>
             <SocialLogo to="/" onClick={toggleHome}>
-              More Ventures
+              <Img src={img} alt="redfox logo" />
             </SocialLogo>
             <WebsiteRights>
-              MV ©️ {new Date().getFullYear} All Rights reserved.{" "}
+              Red Fox Int Logistics ©️ {new Date().getFullYear} All Rights
+              reserved.
             </WebsiteRights>
-            <SocialIcons>
-              <SocialIconLink href="/" target="_blank" aria-label="Facebook">
-                <FaFacebook />
-              </SocialIconLink>
-            </SocialIcons>
-            <SocialIcons>
-              <SocialIconLink href="/" target="_blank" aria-label="Facebook">
-                <FaFacebook />
-              </SocialIconLink>
-            </SocialIcons>
           </SocialMediaWrap>
         </SocialMedia>
       </FooterWrap>
