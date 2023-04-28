@@ -3,17 +3,17 @@ import { colors } from "../../styles/colors";
 
 export const InfoContainer = styled.div`
   color: ${colors.white};
-  background: ${({ lightBg }) => (lightBg ? "#f9f9f9" : "#010606")};
+  background: ${({ lightBg }) => (lightBg ? "#f9f9f9" : "#3a2375")};
 
   @media screen and (max-width: 768px) {
-    padding: 100px 0;
+    padding: 6.25rem 0;
   }
 `;
 
 export const InfoWrapper = styled.div`
   display: grid;
   z-index: 1;
-  height: 860px;
+  height: 650px;
   width: 100%;
   max-width: 1100px;
   margin-right: auto;
@@ -49,37 +49,47 @@ export const Column2 = styled.div`
 export const TextWrapper = styled.div`
   max-width: 540px;
   padding-top: 0;
-  padding-bottom: 60px;
+  grid-area: col2;
 `;
 
 export const TopLine = styled.p`
-  color: #01bf71;
-  font-size: 16px;
-  line-height: 16px;
+  color: ${colors.red};
+  font-size: 1rem;
+  line-height: 1rem;
   font-weight: 700;
   letter-spacing: 1.4px;
   text-transform: uppercase;
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
 `;
 
 export const Heading = styled.h1`
-  margin-bottom: 24px;
-  font-size: 48px;
+  margin-bottom: 1.5rem;
+  font-size: 2.2rem;
   line-height: 1.1;
   font-weight: 600;
   color: ${({ lightText }) => (lightText ? "#f7f8fa" : "#010606")};
 
-  @media screen and (max-width: 480px) {
-    font-size: 32px;
+  @media screen and (max-width: 768px) {
+    font-size: 2rem;
+  }
+  @media screen and (max-width: 580px) {
+    font-size: 1.8rem;
   }
 `;
 
 export const Subtitle = styled.p`
   max-width: 440px;
-  margin-bottom: 35px;
-  font-size: 18px;
+  margin-bottom: 2.2rem;
+  font-size: 1.125rem;
   line-height: 24px;
   color: ${({ darkText }) => (darkText ? "#010606" : "#fff")};
+
+  @media screen and (max-width: 768px) {
+    font-size: 1.12rem;
+  }
+  @media screen and (max-width: 480px) {
+    font-size: 1rem;
+  }
 `;
 export const BtnWrap = styled.div`
   display: flex;
@@ -89,10 +99,21 @@ export const BtnWrap = styled.div`
 export const ImgWrap = styled.div`
   max-width: 500px;
   height: 100%;
+
+  @media screen and (max-width: 768px) {
+    text-align: center;
+  }
 `;
 
 export const Img = styled.img`
   width: 90%;
-  margin: 0 0 10px 0;
+  margin-bottom: 10px;
   padding-right: 0;
+
+  @media screen and (max-width: 768px) {
+    width: 80%;
+  }
+  @media screen and (max-width: 480px) {
+    width: 90%;
+  }
 `;

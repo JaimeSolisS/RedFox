@@ -1,17 +1,20 @@
 import img1 from "../../images/svg-1.svg";
+import yardtruck1 from "../../images/yardtruck1.png";
+import yardtruck2 from "../../images/image2.png";
+import yardtruck3 from "../../images/image3.png";
 
 export const homeObjOne = {
   id: "about",
   lightBg: false,
   lightText: true,
   lightTextDesc: true,
-  topLine: "Premium Bank",
-  headline: "Unlimited Transactions with zero fees",
+  topLine: "Yard Truck",
+  headline: "Save Space and Costs",
   description:
-    "Get access to our exclusive app that allows you to send unlimited transactions without getting charged any fees.",
+    "The efficient solution for moving a variety of trailer types, including dry boxes, platforms, and refrigerated boxes,  within a defined area, such as a distribution center, warehouse, or port terminal.",
   buttonLabel: "Get started",
   imgStart: true,
-  img: img1,
+  img: yardtruck1,
   alt: "Car",
   dark: true,
   primary: true,
@@ -23,33 +26,33 @@ export const homeObjTwo = {
   lightBg: true,
   lightText: false,
   lightTextDesc: false,
-  topLine: "Premium Bank",
-  headline: "Unlimited Transactions with zero fees",
+  topLine: "Specialized Vehicle",
+  headline: "Best choice for short-distance movements",
   description:
-    "Get access to our exclusive app that allows you to send unlimited transactions without getting charged any fees.",
+    "Yard trucks can maneuver in tight spaces and are equipped with a fifth wheel coupling that enables them to quickly and easily connect and disconnect from semi-trailers and containers.",
   buttonLabel: "Get started",
-  imgStart: true,
-  img: img1,
+  imgStart: false,
+  img: yardtruck2,
   alt: "Car",
-  dark: false,
-  primary: false,
+  dark: true,
+  primary: true,
   darkText: true,
 };
 
 export const homeObjThree = {
   id: "about",
-  lightBg: false,
-  lightText: true,
-  lightTextDesc: true,
-  topLine: "Premium Bank",
-  headline: "Unlimited Transactions with zero fees",
+  lightBg: true,
+  lightText: false,
+  lightTextDesc: false,
+  topLine: "up to three times faster",
+  headline: "Benefits and advantages",
   description:
-    "Get access to our exclusive app that allows you to send unlimited transactions without getting charged any fees.",
+    "Yard trucks are a cost-effective, efficient solution for moving trailers in tight spaces, reducing accident risks, and improving space utilization.",
   buttonLabel: "Get started",
   imgStart: true,
-  img: img1,
+  img: yardtruck3,
   alt: "Car",
   dark: true,
   primary: true,
-  darkText: false,
+  darkText: true,
 };
