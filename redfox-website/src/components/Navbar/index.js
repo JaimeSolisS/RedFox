@@ -15,16 +15,20 @@ import {
   NavBtn,
   NavBtnLink,
 } from "./NavbarElements";
-import img from "../../images/logo.png";
+import logoColor from "../../images/logos/logo.png";
+import logoWhite from "../../images/logos/logoWhite.png";
 
 const Navbar = ({ toggle }) => {
   const [scrollNav, setScrollNav] = useState(false);
+  const [imageUrl, setImageUrl] = useState(logoColor);
 
   const changeNav = () => {
     if (window.scrollY >= 80) {
       setScrollNav(true);
+      setImageUrl(logoWhite);
     } else {
       setScrollNav(false);
+      setImageUrl(logoColor);
     }
   };
 
@@ -42,7 +46,7 @@ const Navbar = ({ toggle }) => {
         <Nav scrollNav={scrollNav}>
           <NavbarContainer>
             <NavLogo to="/" onClick={toggleHome}>
-              <Img src={img} alt="redfox logo" />
+              <Img src={imageUrl} alt="redfox logo" />
             </NavLogo>
             <MobileIcon onClick={toggle}>
               <FaBars />
