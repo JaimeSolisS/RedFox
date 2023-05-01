@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Video from "../../videos/video1.mp4";
+import Video from "../../videos/video4Fast.mp4";
 import { Button } from "../ButtonElement";
 import {
   CoolContainer,
@@ -25,7 +25,7 @@ const MainSection = () => {
         <VideoBackground autoPlay loop muted src={Video} type="video/mp4" />
       </CoolBackground>
       <CoolContent>
-        <CoolH1>Streamlined Yard Truck Solutions</CoolH1>
+        <CoolH1>Your missing logistics solutions</CoolH1>
         <CoolP>
           In this industry we all know that saving and reducing costs is one of
           the TOP priorities without leaving behind security and logistic
