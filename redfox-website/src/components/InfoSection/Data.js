@@ -1,24 +1,24 @@
 import img1 from "../../images/svg-1.svg";
 import yardtruck1 from "../../images/yardtruck1.png";
 import yardtruck2 from "../../images/image2.png";
-import yardtruck3 from "../../images/image3.png";
+import yardtruck3 from "../../images/image4.png";
 
 export const homeObjOne = {
   id: "about",
-  lightBg: false,
-  lightText: true,
+  lightBg: true,
+  lightText: false,
   lightTextDesc: true,
   topLine: "Yard Truck",
-  headline: "Save Space and Costs",
+  headline: "Why Choose Us",
   description:
-    "The efficient solution for moving a variety of trailer types, including dry boxes, platforms, and refrigerated boxes,  within a defined area, such as a distribution center, warehouse, or port terminal.",
-  buttonLabel: "Get started",
+    "Yard trucks are an efficient and cost-effective solution for moving trailers in tight spaces, reducing accident risks, and maximizing space utilization. They enable faster movements and can lead to significant cost savings.",
+  buttonLabel: "",
   imgStart: true,
-  img: yardtruck1,
+  img: yardtruck3,
   alt: "Car",
   dark: true,
   primary: true,
-  darkText: false,
+  darkText: true,
 };
 
 export const homeObjTwo = {

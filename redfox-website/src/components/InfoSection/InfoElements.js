@@ -1,9 +1,15 @@
 import styled from "styled-components";
 import { colors } from "../../styles/colors";
+import bgLight from "../../images/bg-3.svg";
+import bgDark from "../../images/bg-4.svg";
+
+//background: ${({ lightBg }) => (lightBg ? "#757780" : "#fb8104")};
+// background-image: ${({ lightBg }) =>
+// lightBg ? `url(${bgLight})` : `url(${bgDark})`};
 
 export const InfoContainer = styled.div`
   color: ${colors.white};
-  background: ${({ lightBg }) => (lightBg ? "#f9f9f9" : "#3a2375")};
+  background: ${({ lightBg }) => (lightBg ? "#fff" : "#545454")};
 
   @media screen and (max-width: 768px) {
     padding: 6.25rem 0;
@@ -15,7 +21,7 @@ export const InfoWrapper = styled.div`
   z-index: 1;
   height: 650px;
   width: 100%;
-  max-width: 1100px;
+  max-width: 1440px;
   margin-right: auto;
   margin-left: auto;
   padding: 0 24px;
@@ -28,10 +34,24 @@ export const InfoRow = styled.div`
   grid-auto-columns: minmax(auto, 1fr);
   align-items: center;
   grid-template-areas: ${({ imgStart }) =>
-    imgStart ? `'col2 col1'` : `'col1 col2'`};
+    imgStart
+      ? `
+'col2 col1'
+`
+      : `
+'col1 col2'
+`};
   @media screen and (max-width: 768px) {
     grid-template-areas: ${({ imgStart }) =>
-      imgStart ? `'col2 col2' 'col1 col1'` : `'col1 col1' 'col2 col2'`};
+      imgStart
+        ? `
+'col2 col2'
+'col1 col1'
+`
+        : `
+'col1 col1'
+'col2 col2'
+`};
   }
 `;
 export const Column1 = styled.div`
@@ -53,7 +73,7 @@ export const TextWrapper = styled.div`
 `;
 
 export const TopLine = styled.p`
-  color: ${colors.red};
+  color: ${({ lightText }) => (lightText ? "#545454" : "#d86f04")};
   font-size: 1rem;
   line-height: 1rem;
   font-weight: 700;
@@ -97,7 +117,7 @@ export const BtnWrap = styled.div`
 `;
 
 export const ImgWrap = styled.div`
-  max-width: 500px;
+  max-width: 620px;
   height: 100%;
 
   @media screen and (max-width: 768px) {
