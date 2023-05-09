@@ -73,8 +73,8 @@ export const TextWrapper = styled.div`
 `;
 
 export const TopLine = styled.p`
-  color: ${({ lightText }) => (lightText ? "#545454" : "#d86f04")};
-  font-size: 1rem;
+  color: ${({ lightText }) => (lightText ? "#d86f04" : "#545454")};
+  font-size: 1.4rem;
   line-height: 1rem;
   font-weight: 700;
   letter-spacing: 1.4px;
@@ -84,7 +84,7 @@ export const TopLine = styled.p`
 
 export const Heading = styled.h1`
   margin-bottom: 1.5rem;
-  font-size: 2.2rem;
+  font-size: 4rem;
   line-height: 1.1;
   font-weight: 600;
   color: ${({ lightText }) => (lightText ? "#f7f8fa" : "#010606")};
@@ -100,7 +100,7 @@ export const Heading = styled.h1`
 export const Subtitle = styled.p`
   max-width: 440px;
   margin-bottom: 2.2rem;
-  font-size: 1.125rem;
+  font-size: 1.4rem;
   line-height: 24px;
   color: ${({ darkText }) => (darkText ? "#010606" : "#fff")};
 

@@ -1,14 +1,17 @@
 import styled from "styled-components";
 import { colors } from "../../styles/colors";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import bgLight from "../../images/bg-4.svg";
 
 export const ContactContainer = styled.div`
-  height: 800px;
+  height: 600px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
+  background: ${colors.white};
+  //background: ${colors.darkGray};
+  //background-image: url(${bgLight});
   @media screen and (max-width: 768px) {
     padding: 6.25rem 0;
   }
@@ -17,9 +20,9 @@ export const ContactContainer = styled.div`
 export const ContactWrapper = styled.div`
   display: grid;
   z-index: 1;
-  height: 650px;
+  height: 400px;
   width: 100%;
-  max-width: 1100px;
+  max-width: 1440px;
   margin-right: auto;
   margin-left: auto;
   padding: 0 24px;
@@ -31,15 +34,32 @@ export const ContactRow = styled.div`
   display: flex;
   width: 100%;
   display: grid;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(1px);
 
   //grid-auto-columns: repeat(2, 1fr);
   align-items: center;
   grid-template-areas: ${({ imgStart }) =>
-    imgStart ? `'col2 col1'` : ` 'col1 col2'`};
+    imgStart
+      ? `
+'col2 col1'
+`
+      : `
+'col1 col2'
+`};
   grid-template-columns: 30% 70%;
   @media screen and (max-width: 768px) {
     grid-template-areas: ${({ imgStart }) =>
-      imgStart ? `'col2 col2''col1 col1'` : `'col1 col1''col2 col2'`};
+      imgStart
+        ? `
+'col2 col2'
+'col1 col1'
+`
+        : `
+'col1 col1'
+'col2 col2'
+`};
   }
 `;
 
@@ -59,8 +79,9 @@ export const Column2 = styled(GridWrapper)`
 
 export const ContactH1 = styled.h1`
   font-size: 2.5rem;
-  color: #fff;
-  margin-bottom: 64px;
+  color: ${colors.darkOrange};
+  margin-top: 10px;
+  margin-bottom: 10px;
 
   @media screen and (max-width: 480px) {
     font-size: 2rem;
@@ -68,7 +89,7 @@ export const ContactH1 = styled.h1`
 `;
 
 export const InformationContainer = styled.div`
-  background: red;
+  background: ${colors.darkOrange};
   align-items: center;
   padding: 16px;
   margin-bottom: 16px;
@@ -115,6 +136,8 @@ export const StyledContactForm = styled.div`
     flex-direction: column;
     width: 100%;
     font-size: 16px;
+    background: ${colors.darkGray};
+    padding: 10px;
     input {
       width: 100%;
       height: 35px;
@@ -142,6 +165,8 @@ export const StyledContactForm = styled.div`
     }
     label {
       margin-top: 1rem;
+      margin-bottom: 1rem;
+      color: white;
     }
     input[type="submit"] {
       margin-top: 2rem;
@@ -149,6 +174,7 @@ export const StyledContactForm = styled.div`
       background: rgb(249, 105, 14);
       color: white;
       border: none;
+      width: 20%;
     }
   }
 `;

@@ -5,10 +5,10 @@ import yardtruck3 from "../../images/image4.png";
 
 export const homeObjOne = {
   id: "about",
-  lightBg: true,
-  lightText: false,
-  lightTextDesc: true,
-  topLine: "Yard Truck",
+  lightBg: false,
+  lightText: true,
+  lightTextDesc: false,
+  topLine: "Yard Trucks",
   headline: "Why Choose Us",
   description:
     "Yard trucks are an efficient and cost-effective solution for moving trailers in tight spaces, reducing accident risks, and maximizing space utilization. They enable faster movements and can lead to significant cost savings.",
@@ -16,14 +16,14 @@ export const homeObjOne = {
   imgStart: true,
   img: yardtruck3,
   alt: "Car",
-  dark: true,
-  primary: true,
-  darkText: true,
+  dark: false,
+  primary: false,
+  darkText: false,
 };
 
 export const homeObjTwo = {
   id: "about",
-  lightBg: true,
+  lightBg: false,
   lightText: false,
   lightTextDesc: false,
   topLine: "Specialized Vehicle",

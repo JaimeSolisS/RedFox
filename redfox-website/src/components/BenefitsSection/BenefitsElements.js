@@ -4,12 +4,13 @@ import { colors } from "../../styles/colors";
 import bgLight from "../../images/bg-4.svg";
 
 export const BenefitsContainer = styled.div`
-  height: 1000px;
+  height: 850px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url(${bgLight});
+  background: ${colors.white};
+  //background-image: url(${bgLight});
 
   @media screen and (max-width: 768px) {
     height: 1500px;
@@ -21,7 +22,7 @@ export const BenefitsContainer = styled.div`
 `;
 
 export const BenefitsWrapper = styled.div`
-  max-width: 1000px;
+  max-width: 1300px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -44,7 +45,7 @@ export const BenefitsWrapper = styled.div`
 
 export const BenefitsH1 = styled.h1`
   font-size: 2.5rem;
-  color: #fff;
+  color: ${colors.darkOrange};
   margin-bottom: 64px;
 
   @media screen and (max-width: 480px) {
@@ -54,12 +55,12 @@ export const BenefitsH1 = styled.h1`
 
 export const BenefitsCard = styled.div`
   height: auto;
-  background: linear-gradient(180deg, ${colors.lightOrange}, ${colors.black});
+  background: ${colors.burntOrange};
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  border-radius: 10px;
+  border-radius: 40px;
   max-height: 340px;
   padding: 30px 30px 40px 30px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
@@ -74,7 +75,7 @@ export const BenefitsCard = styled.div`
   }
 
   &:hover {
-    transform: scale(1.02);
+    transform: scale(1.2);
     transition: all 0.2s ease-in-out;
     cursor: pointer;
   }
