@@ -1,7 +1,7 @@
 import React from "react";
 import { animateScroll as scroll } from "react-scroll";
 import { FaFacebook } from "react-icons/fa";
-import img from "../../images/logo.png";
+import img from "../../images/logos/logoWhite.png";
 import {
   FooterContainer,
   FooterWrap,
@@ -33,8 +33,8 @@ const Footer = () => {
               <Img src={img} alt="redfox logo" />
             </SocialLogo>
             <WebsiteRights>
-              Red Fox Int Logistics ©️ {new Date().getFullYear} All Rights
-              reserved.
+              RF Intl. Logistics ©️ {new Date().getFullYear()} All Rights
+              Reserved.
             </WebsiteRights>
           </SocialMediaWrap>
         </SocialMedia>
