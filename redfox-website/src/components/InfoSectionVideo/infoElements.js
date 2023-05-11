@@ -1,7 +1,5 @@
 import styled from "styled-components";
 import { colors } from "../../styles/colors";
-import bgLight from "../../images/bg-3.svg";
-import bgDark from "../../images/bg-4.svg";
 
 //background: ${({ lightBg }) => (lightBg ? "#757780" : "#fb8104")};
 // background-image: ${({ lightBg }) =>

@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { colors } from "../../styles/colors";
-import bgLight from "../../images/bg-4.svg";
 
 export const BenefitsContainer = styled.div `
   height: 850px;
@@ -10,7 +9,6 @@ export const BenefitsContainer = styled.div `
   justify-content: center;
   align-items: center;
   background: ${colors.white};
-  //background-image: url(${bgLight});
 
   @media screen and (max-width: 1000px) {
     height: 1000px;

@@ -13,7 +13,6 @@ import {
   DataLine,
   DataText,
   ContactIcon,
-  GridWrapper,
 } from "./ContactElements";
 import {
   faPhone,

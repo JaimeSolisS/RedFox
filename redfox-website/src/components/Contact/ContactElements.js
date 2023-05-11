@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import { colors } from "../../styles/colors";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import bgLight from "../../images/bg-4.svg";
 
 export const ContactContainer = styled.div `
   height: 600px;
@@ -10,8 +9,6 @@ export const ContactContainer = styled.div `
   justify-content: center;
   align-items: center;
   background: ${colors.white};
-
-  //background-image: url(${bgLight});
 
   @media screen and (max-width: 1025px) {
     height: 900px;

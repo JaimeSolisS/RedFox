@@ -38,7 +38,7 @@ const MainSection = () => {
             primary="false"
             dark="false"
           >
-            Get started {hover ? <ArrowForward /> : <ArrowRight />}
+            Contact Us {hover ? <ArrowForward /> : <ArrowRight />}
           </Button>
         </CoolBtnWrapper>
       </CoolContent>
