@@ -7,16 +7,22 @@ import bgDark from "../../images/bg-4.svg";
 // background-image: ${({ lightBg }) =>
 // lightBg ? `url(${bgLight})` : `url(${bgDark})`};
 
-export const InfoContainer = styled.div`
+export const InfoContainer = styled.div `
   color: ${colors.white};
   background: ${({ lightBg }) => (lightBg ? "#fff" : "#545454")};
 
   @media screen and (max-width: 768px) {
     padding: 6.25rem 0;
+    height: 800px;
+  }
+
+  @media screen and (max-width: 480px) {
+    padding: 3rem 0;
+    height: 700px;
   }
 `;
 
-export const InfoWrapper = styled.div`
+export const InfoWrapper = styled.div `
   display: grid;
   z-index: 1;
   height: 650px;
@@ -28,7 +34,7 @@ export const InfoWrapper = styled.div`
   justify-content: center;
 `;
 
-export const InfoRow = styled.div`
+export const InfoRow = styled.div `
   display: grid;
 
   grid-auto-columns: minmax(auto, 1fr);
@@ -54,25 +60,25 @@ export const InfoRow = styled.div`
 `};
   }
 `;
-export const Column1 = styled.div`
+export const Column1 = styled.div `
   margin-bottom: 15px;
   padding: 0 15px;
   grid-area: col1;
 `;
 
-export const Column2 = styled.div`
+export const Column2 = styled.div `
   margin-bottom: 15px;
   padding: 0 15px;
   grid-area: col2;
 `;
 
-export const TextWrapper = styled.div`
+export const TextWrapper = styled.div `
   max-width: 540px;
   padding-top: 0;
   grid-area: col2;
 `;
 
-export const TopLine = styled.p`
+export const TopLine = styled.p `
   color: ${({ lightText }) => (lightText ? "#d86f04" : "#545454")};
   font-size: 1.4rem;
   line-height: 1rem;
@@ -82,7 +88,7 @@ export const TopLine = styled.p`
   margin-bottom: 1rem;
 `;
 
-export const Heading = styled.h1`
+export const Heading = styled.h1 `
   margin-bottom: 1.5rem;
   font-size: 4rem;
   line-height: 1.1;
@@ -97,7 +103,7 @@ export const Heading = styled.h1`
   }
 `;
 
-export const Subtitle = styled.p`
+export const Subtitle = styled.p `
   max-width: 440px;
   margin-bottom: 2.2rem;
   font-size: 1.4rem;
@@ -111,12 +117,12 @@ export const Subtitle = styled.p`
     font-size: 1rem;
   }
 `;
-export const BtnWrap = styled.div`
+export const BtnWrap = styled.div `
   display: flex;
   justify-content: flex-start;
 `;
 
-export const ImgWrap = styled.div`
+export const ImgWrap = styled.div `
   max-width: 620px;
   height: 100%;
 
@@ -125,7 +131,7 @@ export const ImgWrap = styled.div`
   }
 `;
 
-export const Video = styled.video`
+export const Video = styled.video `
   width: 100%;
   height: 100%;
   margin-bottom: 10px;

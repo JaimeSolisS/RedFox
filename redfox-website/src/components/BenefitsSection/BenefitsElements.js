@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { colors } from "../../styles/colors";
 import bgLight from "../../images/bg-4.svg";
 
-export const BenefitsContainer = styled.div`
+export const BenefitsContainer = styled.div `
   height: 850px;
   display: flex;
   flex-direction: column;
@@ -12,16 +12,19 @@ export const BenefitsContainer = styled.div`
   background: ${colors.white};
   //background-image: url(${bgLight});
 
+  @media screen and (max-width: 1000px) {
+    height: 1000px;
+  }
   @media screen and (max-width: 768px) {
-    height: 1500px;
+    height: 1600px;
   }
 
   @media screen and (max-width: 480px) {
-    height: 1700px;
+    height: 1750px;
   }
 `;
 
-export const BenefitsWrapper = styled.div`
+export const BenefitsWrapper = styled.div `
   max-width: 1300px;
   margin: 0 auto;
   display: grid;
@@ -43,17 +46,21 @@ export const BenefitsWrapper = styled.div`
   }
 `;
 
-export const BenefitsH1 = styled.h1`
+export const BenefitsH1 = styled.h1 `
   font-size: 2.5rem;
   color: ${colors.darkOrange};
   margin-bottom: 64px;
 
+  @media screen and (max-width: 768px) {
+    font-size: 2.1rem;
+  }
+
   @media screen and (max-width: 480px) {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 `;
 
-export const BenefitsCard = styled.div`
+export const BenefitsCard = styled.div `
   height: auto;
   background: ${colors.burntOrange};
   display: flex;
@@ -81,18 +88,19 @@ export const BenefitsCard = styled.div`
   }
 `;
 
-export const BenefitsIcon = styled(FontAwesomeIcon)`
+export const BenefitsIcon = styled(FontAwesomeIcon)
+`
   color: ${colors.white};
   font-size: 2.5rem;
   margin-bottom: 10px;
 `;
 
-export const BenefitsH2 = styled.h1`
+export const BenefitsH2 = styled.h1 `
   font-size: 1rem;
   margin-bottom: 10px;
 `;
 
-export const BenefitsP = styled.p`
+export const BenefitsP = styled.p `
   font-size: 1rem;
   text-align: center;
 `;

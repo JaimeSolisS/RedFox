@@ -14,7 +14,7 @@ export const homeObjOneV = {
   description:
     "These trucks can maneuver in tight spaces and are equipped with a fifth wheel coupling that enables them to quickly and easily connect and disconnect from semi-trailers and containers.",
   buttonLabel: "",
-  imgStart: true,
+  imgStart: false,
   video: Video,
   alt: "Car",
   dark: false,

@@ -3,21 +3,30 @@ import { colors } from "../../styles/colors";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import bgLight from "../../images/bg-4.svg";
 
-export const ContactContainer = styled.div`
+export const ContactContainer = styled.div `
   height: 600px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background: ${colors.white};
-  //background: ${colors.darkGray};
+
   //background-image: url(${bgLight});
+
+  @media screen and (max-width: 1025px) {
+    height: 900px;
+  }
+
   @media screen and (max-width: 768px) {
-    padding: 6.25rem 0;
+    height: 900px;
+  }
+
+  @media screen and (max-width: 480px) {
+    height: 900px;
   }
 `;
 
-export const ContactWrapper = styled.div`
+export const ContactWrapper = styled.div `
   display: grid;
   z-index: 1;
   height: 400px;
@@ -30,13 +39,13 @@ export const ContactWrapper = styled.div`
   grid-template-columns: 1fr; // add this property
 `;
 
-export const ContactRow = styled.div`
+export const ContactRow = styled.div `
   display: flex;
   width: 100%;
   display: grid;
   padding: 10px;
-  background-color: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(1px);
+  //background-color: rgba(255, 255, 255, 0.1);
+  //backdrop-filter: blur(1px);
 
   //grid-auto-columns: repeat(2, 1fr);
   align-items: center;
@@ -49,7 +58,7 @@ export const ContactRow = styled.div`
 'col1 col2'
 `};
   grid-template-columns: 30% 70%;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1025px) {
     grid-template-areas: ${({ imgStart }) =>
       imgStart
         ? `
@@ -63,32 +72,42 @@ export const ContactRow = styled.div`
   }
 `;
 
-export const GridWrapper = styled.div`
+export const GridWrapper = styled.div `
   width: 100%;
   margin-bottom: 15px;
   padding: 0 15px;
 `;
 
-export const Column1 = styled(GridWrapper)`
+export const Column1 = styled(GridWrapper)
+`
   grid-area: col1;
 `;
 
-export const Column2 = styled(GridWrapper)`
+export const Column2 = styled(GridWrapper)
+`
   grid-area: col2;
 `;
 
-export const ContactH1 = styled.h1`
+export const ContactH1 = styled.h1 `
   font-size: 2.5rem;
   color: ${colors.darkOrange};
   margin-top: 10px;
   margin-bottom: 10px;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 1025px) {
+    margin-top: -400px;
+  }
+  @media screen and (max-width: 768px) {
     font-size: 2rem;
+    margin-top: -400px;
+  }
+
+  @media screen and (max-width: 480px) {
+    margin-top: -400px;
   }
 `;
 
-export const InformationContainer = styled.div`
+export const InformationContainer = styled.div `
   background: ${colors.darkOrange};
   align-items: center;
   padding: 16px;
@@ -97,7 +116,7 @@ export const InformationContainer = styled.div`
   border-radius: 4px;
 `;
 
-export const ContactH2 = styled.h2`
+export const ContactH2 = styled.h2 `
   font-size: 1.5rem;
   color: #fff;
   margin-bottom: 64px;
@@ -107,29 +126,30 @@ export const ContactH2 = styled.h2`
   }
 `;
 
-export const DataLine = styled.div`
+export const DataLine = styled.div `
   display: flex;
   align-items: center;
   gap: 1rem;
 `;
 
-export const ContactIcon = styled(FontAwesomeIcon)`
+export const ContactIcon = styled(FontAwesomeIcon)
+`
   color: ${colors.white};
   font-size: 2.5rem;
   margin-bottom: 10px;
 `;
 
-export const Title = styled.h3`
+export const Title = styled.h3 `
   font-size: 20px;
   margin-bottom: 8px;
 `;
 
-export const DataText = styled.p`
+export const DataText = styled.p `
   font-size: 16px;
   color: ${colors.white};
 `;
 
-export const StyledContactForm = styled.div`
+export const StyledContactForm = styled.div `
   form {
     display: flex;
     align-items: flex-start;
@@ -175,6 +195,10 @@ export const StyledContactForm = styled.div`
       color: white;
       border: none;
       width: 20%;
+
+      @media screen and (max-width: 480px) {
+        width: 40%;
+      }
     }
   }
 `;

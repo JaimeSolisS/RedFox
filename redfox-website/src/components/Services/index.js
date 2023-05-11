@@ -27,25 +27,11 @@ function Services() {
       <ServicesWrapper>
         <ServicesCard className={isVisible ? "fade-in" : ""}>
           <ServicesH2>Yard Spotter</ServicesH2>
-          <ServicesIcon src={Icon1} />
-          <ServicesP>Dock movements</ServicesP>
-        </ServicesCard>
-        <ServicesCard className={isVisible ? "fade-in" : ""}>
-          <ServicesH2>Yard Spotter</ServicesH2>
-          <ServicesIcon src={Icon2} />
-          <ServicesP>Transfers within the industrial park</ServicesP>
-        </ServicesCard>
-        <ServicesCard className={isVisible ? "fade-in" : ""}>
-          <ServicesH2>Yard Spotter</ServicesH2>
           <ServicesIcon src={Icon3} />
-          <ServicesP>Rearrangement of boxes within yards</ServicesP>
+          <ServicesP>
+            Dock movements <br /> Dry Van rearrangement
+          </ServicesP>
         </ServicesCard>
-        <ServicesCard className={isVisible ? "fade-in" : ""}>
-          <ServicesH2>Yard Spotter</ServicesH2>
-          <ServicesIcon src={Icon4} />
-          <ServicesP>Movements within plants</ServicesP>
-        </ServicesCard>
-
         <ServicesCard className={isVisible ? "fade-in" : ""}>
           <ServicesH2>Day Cab Trucks</ServicesH2>
           <ServicesIcon src={Icon5} />
