@@ -19,6 +19,7 @@ import {
   faPhone,
   faEnvelope,
   faMapMarkerAlt,
+  faPaperPlane,
 } from "@fortawesome/free-solid-svg-icons";
 
 const Contact = ({ imgStart }) => {
@@ -27,12 +28,21 @@ const Contact = ({ imgStart }) => {
   const sendEmail = (e) => {
     e.preventDefault();
 
+    const emailRegex = /^\S+@\S+\.\S+$/; // regular expression to validate email format
+    const userEmail = e.target.user_email.value; // get email input value from form
+
+    if (!emailRegex.test(userEmail)) {
+      // check if email is valid
+      alert("Please enter a valid email address.");
+      return; // exit function if email is not valid
+    }
+
     emailjs
       .sendForm(
-        "replace with service id",
-        "replace with template id",
+        "service_xq6r8gt",
+        "template_gy9pw2w",
         form.current,
-        "replace with user id"
+        "tORQnzUQM1PxoNA_D"
       )
       .then(
         (result) => {
@@ -80,7 +90,7 @@ const Contact = ({ imgStart }) => {
                 <input type="email" name="user_email" />
                 <label>Message</label>
                 <textarea name="message" />
-                <input type="submit" value="Send Message" />
+                <input type="submit" value="Send Message" icon={faPaperPlane} />
               </form>
             </StyledContactForm>
           </Column2>
